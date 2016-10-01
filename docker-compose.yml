@@ -1,0 +1,14 @@
+dynamo:
+  image: deangiberson/aws-dynamodb-local
+api:
+  build: .
+  command: dotenv puma
+  environment:
+    PORT: 2345
+    RACK_ENV: development
+  ports:
+    - "2345:2345"
+  volumes:
+    - .:/stockflare
+  links:
+    - dynamo
