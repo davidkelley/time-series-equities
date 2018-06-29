@@ -21,7 +21,7 @@ group :default do
 
   gem 'virtus', '~> 1.0.5'
 
-  gem 'yajl-ruby', '1.2.1', require: 'yajl'
+  gem 'yajl-ruby', '1.3.1'
 end
 
 group :test do
@@ -37,7 +37,7 @@ group :test do
 
   gem 'rspec', '~> 3.1'
 
-  gem 'rubocop'
+  gem 'rubocop', '>= 0.49.0'
 
-  gem 'yard'
+  gem 'yard', '>= 0.9.11'
 end
