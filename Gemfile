@@ -11,7 +11,7 @@ group :default do
   gem 'puma', '2.11.3'
 
   gem 'rack', '~> 1.6.0'
-  gem 'rack-cors', '~> 0.2.8'
+  gem 'rack-cors', '~> 0.4.1'
 
   gem 'rake'
 
